@@ -1,0 +1,15 @@
+{
+    "name": "deploythis/lamp",
+    "description": "Generic development stack",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Deploythis",
+            "email": "hey@deploythis.co"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=7.4.0"
+    }
+}
