@@ -22,12 +22,11 @@ docker-compose up
 
 ## Publishing
 * Save your code to the src folder
-* (optional) To create virtualhost, edit the conf/apache2/sites-available contents and add your virtualhost
-* To enable it, run:
+* (totally optional) To create virtualhost, edit the conf/apache2/sites-available contents and add your custom configuration, enable it running:
 ```sh
 docker exec -w /etc/apache2/sites-available/ docker-lamp_www_1 a2dissite <virtualhost-to-enable>.conf
 ```
-* (optional) Edit the hosts file and add your virtualhost ej:
+* (totally optional) Edit your local machine hosts file adding your new virtualhost ej:
 ```sh
 127.0.0.1 <virtualhost-to-enable>.test
 ```
@@ -44,6 +43,9 @@ docker exec -w /var/www/html docker-lamp_www_1 composer update
     * user/password: root/root
     * server: localhost
     * port: 3306
+
+## About the PHP configuration
+* The default PHP configuration load all the extensions and the default settings, to change the settings, edit the php.ini file from the conf/php/ directory.
 
 ## To access Adminer
 
