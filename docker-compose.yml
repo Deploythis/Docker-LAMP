@@ -6,6 +6,8 @@ services:
             - "80:80"
         volumes:
             - ./src:/var/www/html
+            - ./conf/apache2/sites-available:/etc/apache2/sites-available
+            - ./conf/php:/usr/local/php
         links:
             - db
         networks:

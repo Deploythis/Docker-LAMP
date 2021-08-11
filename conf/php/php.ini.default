@@ -1,0 +1,1 @@
+# The original distro get all the extensions enabled, if you need something else, rename this file to .ini an reload the container
