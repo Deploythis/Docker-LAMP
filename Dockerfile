@@ -1,6 +1,6 @@
 FROM php:7.4-apache-buster
 ARG DEBIAN_FRONTEND=noninteractive
-RUN docker-php-ext-install mysqli
+RUN docker-php-ext-install mysqli pdo pdo_mysql
 RUN apt-get update \
     && apt-get install -y libzip-dev \
     && apt-get install -y zlib1g-dev \
